@@ -42,7 +42,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_splash_designby"
-        app:layout_constraintVertical_bias="0.335"
+        app:layout_constraintVertical_bias="0.189"
         tools:targetApi="lollipop" />
 
     <TextView
