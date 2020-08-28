@@ -21,10 +21,10 @@
         android:transitionName="logo_image"
         app:layout_constraintBottom_toTopOf="@+id/tv_splash_title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_splash_title"
@@ -42,7 +42,25 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_splash_designby"
-        app:layout_constraintVertical_bias="0.189"
+        app:layout_constraintVertical_bias="0.371"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/tv_splash_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/engl3"
+        android:gravity="center"
+        android:text="@string/splashLogin"
+        android:textColor="@color/orang"
+        android:textSize="40sp"
+        android:transitionName="logo_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_splash_title"
+        app:layout_constraintVertical_bias="0.241"
         tools:targetApi="lollipop" />
 
     <TextView
@@ -58,9 +76,9 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_splash_title"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,4 +2,5 @@
     <string name="app_name">NahdaPack</string>
     <string name="design_by">Design By iTm Teamy</string>
     <string name="app_welcom">Welcome</string>
+    <string name="splashLogin">LoGin</string>
 </resources>
