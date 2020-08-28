@@ -21,6 +21,8 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        getSupportActionBar().hide();
         ///
         obj_civ_splash_img=(ImageView) findViewById(R.id.civ_splash_img);
         obj_tv_splash_title=(TextView) findViewById(R.id.tv_splash_title);
