@@ -10,12 +10,18 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.rey.material.widget.CheckBox;
 import com.sbm.nahdapack.Class.GnrFunction;
@@ -33,7 +39,10 @@ public class LoginActivity extends AppCompatActivity {
     private Button obj_Log_Button, obj_log_lang_Button;
     private ProgressDialog loadingBar;
     GnrFunction gf=new GnrFunction();
+    private Spinner  obj_spnr_log_type;
 
+
+    String[] users = { "مندوب", "عميل", "مدير", "موظف", "خط الإنتاج" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +70,7 @@ public class LoginActivity extends AppCompatActivity {
         obj_log_et_Password=(EditText) findViewById(R.id.et_log_pass);
         obj_log_et_user_name=(EditText) findViewById(R.id.et_log_user_name);
         loadingBar=new ProgressDialog(this);
+        obj_spnr_log_type=(Spinner) findViewById(R.id.spnr_log_type);
 
         obj_log_lang_Button.setOnClickListener(new View.OnClickListener() {
 
@@ -80,6 +90,34 @@ public class LoginActivity extends AppCompatActivity {
                     setLocale("en");
                     //obj_btn_registr_lang.setText("العربية");
                 }
+
+            }
+        });
+
+        //region spinner
+        Spinner spin = (Spinner) findViewById(R.id.spnr_log_type);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, users);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spin.setAdapter(adapter);
+
+        //endregion
+
+        obj_spnr_log_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                try {
+                    Gnr_Variable gnrVR=(Gnr_Variable) getApplicationContext();
+                    gnrVR.setUser(obj_spnr_log_type.getSelectedItem().toString());
+                    Toast.makeText(LoginActivity.this, "" + gnrVR.getUser() + "", Toast.LENGTH_SHORT).show();
+                } catch (Exception ex) {
+
+                    Toast.makeText(LoginActivity.this, "" + ex.toString() + "", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
             }
         });
