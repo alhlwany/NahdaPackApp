@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
         ConstraintLayout constraintLayout = findViewById(R.id.layoutSplash);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
         animationDrawable.setEnterFadeDuration(2000);
-        animationDrawable.setExitFadeDuration(3000);
+        animationDrawable.setExitFadeDuration(5000);
         animationDrawable.start();
 
         animation_mix=AnimationUtils.loadAnimation(getApplicationContext(), R.animator.zmix_anim);

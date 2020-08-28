@@ -3,4 +3,9 @@
     <string name="design_by">Design By iTm Teamy</string>
     <string name="app_welcom">Welcome</string>
     <string name="splashLogin">LoGin</string>
+    <string name="language">العربية</string>
+    <string name="log_title">LoGin</string>
+    <string name="user_name">User Name</string>
+    <string name="pass">Password</string>
+    <string name="login">Commit</string>
 </resources>

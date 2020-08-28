@@ -1,9 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_log_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nahdalogo"
+            app:civ_border_color="#A19E9A"
+            app:civ_border_width="1dp"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/et_log_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/login_applogo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_input_design"
+            android:fontFamily="@font/engl2"
+            android:gravity="center"
+            android:hint="@string/user_name"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="@color/orang"
+            android:textColorHint="@color/white_s"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/et_log_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/et_log_phone_num"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_input_design"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/orang"
+            android:textColorHint="@color/white_s"
+            android:textSize="22dp"
+            android:fontFamily="@font/engl2"/>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password_input"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_log_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout_1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/engl2"
+            android:padding="17dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password_input"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_log_titl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="179dp"
+        android:layout_marginLeft="179dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="@font/engl3"
+        android:text="@string/log_title"
+        android:textColor="@color/white_s"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_log_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/diwany2"
+        android:text="@string/language"
+        android:textColor="@color/white_s"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+</RelativeLayout>
