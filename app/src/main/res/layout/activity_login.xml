@@ -77,10 +77,12 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
+                android:fontFamily="@font/diwany3"
                 style="@style/Widget.AppCompat.Spinner.DropDown"
                 android:ellipsize="marquee"
                 android:background="@drawable/bg_spinner_1"
-                android:gravity="center" />
+                android:textAlignment="gravity"
+                android:gravity="center"/>
         </LinearLayout>
 
         <Button

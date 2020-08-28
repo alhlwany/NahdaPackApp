@@ -108,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
                 try {
                     Gnr_Variable gnrVR=(Gnr_Variable) getApplicationContext();
                     gnrVR.setUser(obj_spnr_log_type.getSelectedItem().toString());
-                    Toast.makeText(LoginActivity.this, "" + gnrVR.getUser() + "", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(LoginActivity.this, "" + gnrVR.getUser() + "", Toast.LENGTH_SHORT).show();
                 } catch (Exception ex) {
 
                     Toast.makeText(LoginActivity.this, "" + ex.toString() + "", Toast.LENGTH_SHORT).show();
