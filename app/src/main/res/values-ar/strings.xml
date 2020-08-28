@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">النهضة للتغليف</string>
+    <string name="design_by">تصميم فريق البرمجة</string>
+    <string name="app_welcom">مرحبا</string>
+    <string name="splashLogin">الدخول</string>
+    <string name="language">English</string>
+    <string name="log_title">شاشة الدخول</string>
+    <string name="user_name">المستخدم</string>
+    <string name="pass">كلمة المرور</string>
+    <string name="login">دخول</string>
+</resources>
