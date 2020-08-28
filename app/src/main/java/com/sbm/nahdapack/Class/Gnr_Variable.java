@@ -1,6 +1,8 @@
 package com.sbm.nahdapack.Class;
 
-public class Gnr_Variable {
+import android.app.Application;
+
+public class Gnr_Variable  extends Application {
 
     private String pub_vr_comp,vr_delivery_val,Uphone="PHONE",Upass="PASSWORD";
     private String lang="ar";
