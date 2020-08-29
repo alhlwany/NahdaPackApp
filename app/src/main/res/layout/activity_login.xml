@@ -82,7 +82,10 @@
                 android:ellipsize="marquee"
                 android:background="@drawable/bg_spinner_1"
                 android:textAlignment="gravity"
+                android:popupBackground="@color/orang"
+
                 android:gravity="center"/>
+
         </LinearLayout>
 
         <Button
